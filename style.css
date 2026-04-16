@@ -202,10 +202,10 @@ button{
 
 /* PROFILE IMAGE */
 
-.hero-image{
-    position:relative;
-    margin-left:-40px; 
-    transform:translateX(-70px);
+.hero-image {
+    position: relative;
+    margin-left: 0;
+    transform: none;
 }
 
 .hero-image img {
@@ -727,20 +727,26 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  
-  .hero {
-    flex-direction: column;
+
+  .hero-container {
+    flex-direction: column;     /* 🔥 MAIN FIX */
+    align-items: center;
     text-align: center;
+    gap: 30px;
   }
 
-  .hero-content {
-    padding: 0 20px;
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    transform: none;            /* 🔥 remove shift */
+    margin-left: 0;
   }
 
   .hero-image img {
-    width: 250px;     /* smaller for mobile */
-    height: 250px;
-    margin: 20px auto;
+    max-width: 250px;
+    width: 100%;
   }
 
 }
