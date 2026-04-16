@@ -208,13 +208,11 @@ button{
     transform:translateX(-70px);
 }
 
-.hero-image img{
-    width:320px;
-    height:320px;
-    object-fit:cover;
-    border-radius:50%;
-    position:relative;
-    z-index:2;
+.hero-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50%;
 }
 
 /* glowing background */
@@ -728,3 +726,21 @@ h3 {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .hero-image img {
+    width: 250px;     /* smaller for mobile */
+    height: 250px;
+    margin: 20px auto;
+  }
+
+}
