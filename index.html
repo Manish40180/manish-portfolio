@@ -32,11 +32,11 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Work</a>
-    <a href="#resume">Resume</a>
+    <a href="#certifications">Certificates</a>
     <a href="#contact">Contact</a>
   </nav>
   <div class="header-right">
-    <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="resume-btn">Resume ↗</a>
+    <a href="https://drive.google.com/file/d/1rFjc1aNnLHt5na-pwmOmHULzOdvClS6Y/view?usp=drivesdk" target="_blank" class="resume-btn">Resume ↗</a>
     <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
   </div>
 </header>
@@ -49,13 +49,15 @@
   <a href="#about" class="mobile-link">About</a>
   <a href="#skills" class="mobile-link">Skills</a>
   <a href="#projects" class="mobile-link">Work</a>
-  <a href="#resume" class="mobile-link">Resume</a>
+  <a href="#certifications" class="mobile-link">Certificates</a>
   <a href="#contact" class="mobile-link">Contact</a>
-  <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="mobile-link">Resume ↗</a>
+  <a href="https://drive.google.com/file/d/1rFjc1aNnLHt5na-pwmOmHULzOdvClS6Y/view?usp=drivesdk" target="_blank" class="mobile-link">Resume ↗</a>
 </div>
 
 <!-- HERO — hero.jpg background (purple/blue dev setup) -->
 <section class="hero" id="home">
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
   <div class="hero-bg-grid"></div>
   <div class="hero-container">
     <div class="hero-text">
@@ -81,7 +83,7 @@
     <div class="hero-image">
       <div class="image-ring"></div>
       <div class="image-ring-2"></div>
-      <img src="images/profile.jpg" alt="Manish Yadav" loading="lazy">
+      <img src="images/profile.jpeg" alt="Manish Yadav" loading="lazy">
       <div class="floating-badge badge-1">Full Stack</div>
       <div class="floating-badge badge-2">AI/ML</div>
     </div>
@@ -101,7 +103,7 @@
       <p class="about-text">I am a software developer passionate about building scalable digital solutions with clean architecture and modern technologies. Currently studying at KIIT, I focus on performance, simplicity, and impactful solutions that make a real difference.</p>
       <p class="about-text">I love turning ideas into reality — whether it's a full-stack application, an AI-powered tool, or a sleek front-end experience.</p>
       <div class="about-cta">
-        <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="btn-primary">Download Resume ↗</a>
+        <a href="https://drive.google.com/file/d/1rFjc1aNnLHt5na-pwmOmHULzOdvClS6Y/view?usp=drivesdk" target="_blank" class="btn-primary">Download Resume ↗</a>
         <a href="#contact" class="btn-ghost">Get In Touch</a>
       </div>
     </div>
@@ -240,122 +242,68 @@
   </div>
 </div>
 
-<!-- RESUME & CERTIFICATIONS — contact.png background (deep blue waves) -->
-<section id="resume" class="resume-section">
+<!-- RESUME & CERTIFICATIONS -->
+<section id="certifications" class="resume-section">
   <div class="resume-section-inner">
     <div class="section-header fade-up">
-      <div class="section-label">04 — Resume & Certifications</div>
-      <h2>My <em>Credentials</em></h2>
+      <div class="section-label">04 — Resume & Credentials</div>
+      <h2>Proof of <em>Growth</em></h2>
     </div>
-    <div class="resume-certs-grid fade-up">
 
-      <!-- LEFT HALF: RESUME -->
-      <div class="resume-half">
-        <div class="half-heading">
-          <span class="half-icon">📄</span>
-          <h3>Resume</h3>
-          <p>My complete CV covering education, projects, skills and experience.</p>
-        </div>
-        <div class="half-actions">
-          <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="cred-btn cred-primary">
-            👁&nbsp; View Resume
-          </a>
-          <a href="https://drive.google.com/uc?export=download&id=1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt" target="_blank" class="cred-btn cred-ghost">
-            ⬇&nbsp; Download Resume
-          </a>
-        </div>
-        <div class="resume-preview-mini">
-          <iframe src="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/preview"
-            title="Manish Yadav Resume" loading="lazy" allowfullscreen></iframe>
-          <div class="preview-mini-overlay">
-            <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link"
-              target="_blank" class="preview-open-btn">Open Full View ↗</a>
-          </div>
-        </div>
+    <article class="featured-cert cert-item resume-highlight fade-up" data-tilt>
+      <span class="cert-orbit"></span>
+      <div class="cert-badge">CV</div>
+      <div>
+        <span class="cert-kicker">Featured Resume</span>
+        <h3>Manish Kumar Yadav — Professional CV</h3>
+        <p>Explore my technical skills, full-stack and AI projects, education, achievements, and professional credentials in one place.</p>
+        <div class="cert-meta"><span>Software Engineer Profile</span><span>Updated 2026</span></div>
+        <a href="https://drive.google.com/file/d/1rFjc1aNnLHt5na-pwmOmHULzOdvClS6Y/view?usp=drivesdk" target="_blank" rel="noopener" class="btn-primary">View My CV ↗</a>
       </div>
+    </article>
 
-      <!-- RIGHT HALF: CERTIFICATES -->
-      <div class="certs-half">
-        <div class="half-heading">
-          <span class="half-icon">🏆</span>
-          <h3>Certifications</h3>
-          <p>Verified credentials from industry-recognised platforms.</p>
+    <div class="cert-showcase fade-up">
+      <article class="featured-cert cert-item" data-tilt>
+        <span class="cert-orbit"></span>
+        <div class="cert-badge">★</div>
+        <div>
+          <span class="cert-kicker">Top Professional Credential</span>
+          <h3>IBM Data Science Professional Certificate</h3>
+          <p>12-course professional program covering Python, SQL, data analysis, visualization, machine learning, cloud labs, and a capstone project.</p>
+          <div class="cert-meta"><span>IBM Skills Network via Coursera</span><span>Aug 2026</span></div>
+          <a href="https://drive.google.com/file/d/1iQa7EhaOebujUjUQAfJXdUJyxd0p0RSD/view?usp=drivesdk" target="_blank" rel="noopener" class="btn-primary">View Credential ↗</a>
         </div>
-        <div class="certs-list">
+      </article>
 
-          <div class="cert-item">
-            <div class="cert-top">
-              <span class="cert-badge">01</span>
-              <div class="cert-title-wrap">
-                <strong class="cert-name">Full Stack Developer Bootcamp</strong>
-                <span class="cert-issuer">GeeksforGeeks</span>
-              </div>
-            </div>
-            <div class="cert-btns">
-              <a href="https://drive.google.com/file/d/14MNhgyBLfTW8-acCQHCSJpvdJwjr6gne/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
-              <a href="https://drive.google.com/uc?export=download&id=14MNhgyBLfTW8-acCQHCSJpvdJwjr6gne" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
-            </div>
-          </div>
-
-          <div class="cert-item">
-            <div class="cert-top">
-              <span class="cert-badge">02</span>
-              <div class="cert-title-wrap">
-                <strong class="cert-name">Learning Docker</strong>
-                <span class="cert-issuer">LinkedIn Learning</span>
-              </div>
-            </div>
-            <div class="cert-btns">
-              <a href="https://drive.google.com/file/d/1nABa_SzxY-IrsPnuQMdJCZgQgy9fgOta/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
-              <a href="https://drive.google.com/uc?export=download&id=1nABa_SzxY-IrsPnuQMdJCZgQgy9fgOta" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
-            </div>
-          </div>
-
-          <div class="cert-item">
-            <div class="cert-top">
-              <span class="cert-badge">03</span>
-              <div class="cert-title-wrap">
-                <strong class="cert-name">DevOps Foundations</strong>
-                <span class="cert-issuer">LinkedIn Learning</span>
-              </div>
-            </div>
-            <div class="cert-btns">
-              <a href="https://drive.google.com/file/d/173MKQo-KeWYo5YJRcVAC9vdbpL6lsitz/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
-              <a href="https://drive.google.com/uc?export=download&id=173MKQo-KeWYo5YJRcVAC9vdbpL6lsitz" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
-            </div>
-          </div>
-
-          <div class="cert-item">
-            <div class="cert-top">
-              <span class="cert-badge">04</span>
-              <div class="cert-title-wrap">
-                <strong class="cert-name">Health Systems Development</strong>
-                <span class="cert-issuer">Coursera</span>
-              </div>
-            </div>
-            <div class="cert-btns">
-              <a href="https://drive.google.com/file/d/1J5YDgI03RB2x7bMQDuXEzx-F3ko1K-g2/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
-              <a href="https://drive.google.com/uc?export=download&id=1J5YDgI03RB2x7bMQDuXEzx-F3ko1K-g2" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
-            </div>
-          </div>
-
-          <div class="cert-item">
-            <div class="cert-top">
-              <span class="cert-badge">05</span>
-              <div class="cert-title-wrap">
-                <strong class="cert-name">Additional Certification</strong>
-                <span class="cert-issuer">Verified Course</span>
-              </div>
-            </div>
-            <div class="cert-btns">
-              <a href="https://drive.google.com/file/d/1E7KE2a5-fjTyM8FoCU4V0B4oQvEHuWe_/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
-              <a href="https://drive.google.com/uc?export=download&id=1E7KE2a5-fjTyM8FoCU4V0B4oQvEHuWe_" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
-            </div>
-          </div>
-
-        </div>
+      <div class="cert-grid">
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1qGky7CLmOOQGdaObRBxAZWFgCCyqcSSf/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">01</span><span class="cert-icon">🛡</span><h3>Google Cybersecurity Professional Certificate</h3><p>Google via Coursera · 9-course professional certificate</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1J5YDgI03RB2x7bMQDuXEzx-F3ko1K-g2/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">02</span><span class="cert-icon">⚛</span><h3>Full Stack Developer Bootcamp — Master Frontend to Backend</h3><p>GeeksforGeeks · 6-week course</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1E7KE2a5-fjTyM8FoCU4V0B4oQvEHuWe_/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">03</span><span class="cert-icon">⚙</span><h3>DevOps Foundations</h3><p>LinkedIn Learning · DevOps fundamentals</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1FX69d4FsJ5bUN-tIGpNhPOkEigK-tULO/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">04</span><span class="cert-icon">📦</span><h3>Learning Docker</h3><p>LinkedIn Learning · Docker products</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1HD4cO012BvNlWE-7D567Vv7P1ix2CV__/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">05</span><span class="cert-icon">⚖</span><h3>Corporate Governance</h3><p>Coursera · Starweaver</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1mYNo7wi1jgRaqzdx3EOzxIvsWur_Dxm7/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">06</span><span class="cert-icon">🧭</span><h3>Ethical Decision Making for Success in the Tech Industry</h3><p>University of Colorado Boulder via Coursera</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/1nABa_SzxY-IrsPnuQMdJCZgQgy9fgOta/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">07</span><span class="cert-icon">🌱</span><h3>Business for Good: Fundamentals of Corporate Responsibility</h3><p>London Business School via Coursera</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/173MKQo-KeWYo5YJRcVAC9vdbpL6lsitz/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">08</span><span class="cert-icon">🏥</span><h3>Health Systems Development: Health Systems, Policy and Research</h3><p>Imperial College London via Coursera</p><span>View certificate ↗</span>
+        </a>
+        <a class="certificate-card" data-tilt href="https://drive.google.com/file/d/14MNhgyBLfTW8-acCQHCSJpvdJwjr6gne/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="cert-num">09</span><span class="cert-icon">💙</span><h3>Health Systems Development: Introduction to Health Systems</h3><p>Imperial College London via Coursera</p><span>View certificate ↗</span>
+        </a>
       </div>
-
     </div>
   </div>
 </section>
