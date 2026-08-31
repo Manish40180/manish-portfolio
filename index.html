@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish Yadav KIIT | Full Stack Developer Portfolio</title>
+<meta name="description" content="Manish Yadav KIIT student and software developer portfolio. Full stack developer, AI enthusiast, and freelancer.">
+<meta name="keywords" content="Manish Yadav KIIT, KIIT developer, Manish Yadav portfolio, KIIT software developer, full stack developer KIIT">
+<meta name="author" content="Manish Yadav">
+<meta name="google-site-verification" content="ldGg78B1zE5YcCOj8MRZcoDrfx3yRw1U_uBmVI6-SEU" />
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">M</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <p class="preloader-text">Loading Portfolio...</p>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="logo">Manish Yadav<span>.</span></div>
+  <nav class="nav-center">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-right">
+    <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="resume-btn">Resume ↗</a>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#projects" class="mobile-link">Work</a>
+  <a href="#resume" class="mobile-link">Resume</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="mobile-link">Resume ↗</a>
+</div>
+
+<!-- HERO — hero.jpg background (purple/blue dev setup) -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="hero-badge">✦ Available for Freelance</div>
+      <h1>
+        <span class="hero-line-1">Manish</span>
+        <span class="hero-line-2">Yadav</span>
+        <span class="hero-line-3"><span id="typing"></span><span class="cursor">|</span></span>
+      </h1>
+      <p>I build scalable web applications and modern digital systems focused on performance, clean architecture, and simplicity.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-secondary">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat"><span class="stat-num">2+</span><span class="stat-label">Years</span></div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat"><span class="stat-num">100%</span><span class="stat-label">Dedication</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-ring"></div>
+      <div class="image-ring-2"></div>
+      <img src="images/profile.jpg" alt="Manish Yadav" loading="lazy">
+      <div class="floating-badge badge-1">Full Stack</div>
+      <div class="floating-badge badge-2">AI/ML</div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT — about.png background (colourful polygon network on black) -->
+<section id="about" class="about-section">
+  <div class="about-layout">
+    <div class="about-left fade-up">
+      <div class="section-label">01 — About</div>
+      <h2>Crafting Digital<br><em>Experiences</em></h2>
+      <p class="about-text">I am a software developer passionate about building scalable digital solutions with clean architecture and modern technologies. Currently studying at KIIT, I focus on performance, simplicity, and impactful solutions that make a real difference.</p>
+      <p class="about-text">I love turning ideas into reality — whether it's a full-stack application, an AI-powered tool, or a sleek front-end experience.</p>
+      <div class="about-cta">
+        <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="btn-primary">Download Resume ↗</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="about-right fade-up">
+      <div class="about-img-wrap">
+        <img src="images/profile.JPG" alt="Manish Yadav KIIT Developer" class="profile-img">
+        <div class="img-accent"></div>
+      </div>
+      <div class="tech-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
+        <span>React</span><span>Node.js</span><span>SQL</span><span>AI/ML</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS — work.png background (laptop/coding illustration) -->
+<section id="skills" class="skills-section">
+  <div class="skills-inner">
+    <div class="section-header fade-up">
+      <div class="section-label">02 — Skills & Stack</div>
+      <h2>What I <em>Do</em></h2>
+    </div>
+    <div class="skills-grid fade-up">
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <div class="skill-category">LANGUAGES</div>
+        <div class="skill-tags">
+          <span>Java (OOP)</span><span>C</span><span>Python</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-category">AI / ML</div>
+        <div class="skill-tags">
+          <span>Machine Learning</span><span>Artificial Intelligence</span><span>Data Science</span><span>TensorFlow</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-category">FULL STACK</div>
+        <div class="skill-tags">
+          <span>React</span><span>Node.js</span><span>Tailwind CSS</span><span>MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-category">TOOLS</div>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-category">ENGINEERING</div>
+        <div class="skill-tags">
+          <span>Software Design</span><span>Problem Solving</span><span>DSA</span><span>Clean Code</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎯</div>
+        <div class="skill-category">SOFT SKILLS</div>
+        <div class="skill-tags">
+          <span>Discipline</span><span>Team Work</span><span>Analytical</span><span>Leadership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS — bg.jpg background (network lines / abstract) -->
+<section id="projects" class="projects-section">
+  <div class="projects-inner">
+    <div class="section-header fade-up">
+      <div class="section-label">03 — Selected Work</div>
+      <h2>Projects I've <em>Built</em></h2>
+    </div>
+    <div class="project-grid">
+      <div class="project-card fade-up" data-project="finrobot">
+        <div class="project-number">01</div>
+        <div class="project-info">
+          <h3>FinRobot</h3>
+          <p>AI-powered financial analysis platform with real-time stock market insights and automated trading recommendations.</p>
+          <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>React</span></div>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="proj-link">Live Demo ↗</a>
+          <a href="#" target="_blank" class="proj-link">GitHub ↗</a>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-card fade-up" data-project="portfolio">
+        <div class="project-number">02</div>
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Modern developer portfolio with smooth animations, glassmorphism design, and full responsiveness.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="proj-link">Live Demo ↗</a>
+          <a href="#" target="_blank" class="proj-link">GitHub ↗</a>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-card fade-up" data-project="ecommerce">
+        <div class="project-number">03</div>
+        <div class="project-info">
+          <h3>E-commerce Platform</h3>
+          <p>Scalable online store with optimized performance, secure payments, and modern UI/UX design.</p>
+          <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="proj-link">Live Demo ↗</a>
+          <a href="#" target="_blank" class="proj-link">GitHub ↗</a>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <button class="close-modal" aria-label="Close modal">✕</button>
+    <div class="modal-header">
+      <span class="modal-num" id="modal-num"></span>
+      <h3 id="modal-title"></h3>
+    </div>
+    <p id="modal-description"></p>
+    <div class="modal-tech-stack" id="modal-tech"></div>
+    <div class="modal-links">
+      <a id="modal-live" href="#" target="_blank" class="btn-primary">Live Demo ↗</a>
+      <a id="modal-github" href="#" target="_blank" class="btn-ghost">GitHub ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME & CERTIFICATIONS — contact.png background (deep blue waves) -->
+<section id="resume" class="resume-section">
+  <div class="resume-section-inner">
+    <div class="section-header fade-up">
+      <div class="section-label">04 — Resume & Certifications</div>
+      <h2>My <em>Credentials</em></h2>
+    </div>
+    <div class="resume-certs-grid fade-up">
+
+      <!-- LEFT HALF: RESUME -->
+      <div class="resume-half">
+        <div class="half-heading">
+          <span class="half-icon">📄</span>
+          <h3>Resume</h3>
+          <p>My complete CV covering education, projects, skills and experience.</p>
+        </div>
+        <div class="half-actions">
+          <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link" target="_blank" class="cred-btn cred-primary">
+            👁&nbsp; View Resume
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt" target="_blank" class="cred-btn cred-ghost">
+            ⬇&nbsp; Download Resume
+          </a>
+        </div>
+        <div class="resume-preview-mini">
+          <iframe src="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/preview"
+            title="Manish Yadav Resume" loading="lazy" allowfullscreen></iframe>
+          <div class="preview-mini-overlay">
+            <a href="https://drive.google.com/file/d/1n4kBS91q3tV1RmYfPNiV5G4UGYU8HBmt/view?usp=drive_link"
+              target="_blank" class="preview-open-btn">Open Full View ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT HALF: CERTIFICATES -->
+      <div class="certs-half">
+        <div class="half-heading">
+          <span class="half-icon">🏆</span>
+          <h3>Certifications</h3>
+          <p>Verified credentials from industry-recognised platforms.</p>
+        </div>
+        <div class="certs-list">
+
+          <div class="cert-item">
+            <div class="cert-top">
+              <span class="cert-badge">01</span>
+              <div class="cert-title-wrap">
+                <strong class="cert-name">Full Stack Developer Bootcamp</strong>
+                <span class="cert-issuer">GeeksforGeeks</span>
+              </div>
+            </div>
+            <div class="cert-btns">
+              <a href="https://drive.google.com/file/d/14MNhgyBLfTW8-acCQHCSJpvdJwjr6gne/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
+              <a href="https://drive.google.com/uc?export=download&id=14MNhgyBLfTW8-acCQHCSJpvdJwjr6gne" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-top">
+              <span class="cert-badge">02</span>
+              <div class="cert-title-wrap">
+                <strong class="cert-name">Learning Docker</strong>
+                <span class="cert-issuer">LinkedIn Learning</span>
+              </div>
+            </div>
+            <div class="cert-btns">
+              <a href="https://drive.google.com/file/d/1nABa_SzxY-IrsPnuQMdJCZgQgy9fgOta/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
+              <a href="https://drive.google.com/uc?export=download&id=1nABa_SzxY-IrsPnuQMdJCZgQgy9fgOta" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-top">
+              <span class="cert-badge">03</span>
+              <div class="cert-title-wrap">
+                <strong class="cert-name">DevOps Foundations</strong>
+                <span class="cert-issuer">LinkedIn Learning</span>
+              </div>
+            </div>
+            <div class="cert-btns">
+              <a href="https://drive.google.com/file/d/173MKQo-KeWYo5YJRcVAC9vdbpL6lsitz/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
+              <a href="https://drive.google.com/uc?export=download&id=173MKQo-KeWYo5YJRcVAC9vdbpL6lsitz" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-top">
+              <span class="cert-badge">04</span>
+              <div class="cert-title-wrap">
+                <strong class="cert-name">Health Systems Development</strong>
+                <span class="cert-issuer">Coursera</span>
+              </div>
+            </div>
+            <div class="cert-btns">
+              <a href="https://drive.google.com/file/d/1J5YDgI03RB2x7bMQDuXEzx-F3ko1K-g2/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
+              <a href="https://drive.google.com/uc?export=download&id=1J5YDgI03RB2x7bMQDuXEzx-F3ko1K-g2" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-top">
+              <span class="cert-badge">05</span>
+              <div class="cert-title-wrap">
+                <strong class="cert-name">Additional Certification</strong>
+                <span class="cert-issuer">Verified Course</span>
+              </div>
+            </div>
+            <div class="cert-btns">
+              <a href="https://drive.google.com/file/d/1E7KE2a5-fjTyM8FoCU4V0B4oQvEHuWe_/view?usp=drive_link" target="_blank" class="cert-btn">View ↗</a>
+              <a href="https://drive.google.com/uc?export=download&id=1E7KE2a5-fjTyM8FoCU4V0B4oQvEHuWe_" target="_blank" class="cert-btn cert-dl">Download ⬇</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT — contact.png background (blue waves) -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="section-header fade-up">
+      <div class="section-label">05 — Contact</div>
+      <h2>Let's Work <em>Together</em></h2>
+    </div>
+    <p class="contact-sub fade-up">Open for collaborations, freelance work, and exciting projects. Let's build something amazing together.</p>
+    <div class="contact-grid fade-up">
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="user_name">Your Name</label>
+          <input type="text" id="user_name" name="user_name" placeholder="John Doe" required>
+          <span class="error-message" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="user_email">Email Address</label>
+          <input type="email" id="user_email" name="user_email" placeholder="john@example.com" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project..." required rows="5"></textarea>
+          <span class="error-message" id="message-error"></span>
+        </div>
+        <button type="submit" id="submit-btn">
+          <span class="btn-text">Send Message</span>
+          <div class="btn-loader" id="btn-loader"></div>
+        </button>
+      </form>
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>Feel free to reach out through any of the channels below.</p>
+        <div class="contact-links">
+          <a href="https://github.com/Manish40180" target="_blank" class="contact-link">
+            <div class="contact-link-icon">GH</div>
+            <div><strong>GitHub</strong><span>github.com/Manish40180</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/manish-kumar-yadav-57a1b9212" target="_blank" class="contact-link">
+            <div class="contact-link-icon">LI</div>
+            <div><strong>LinkedIn</strong><span>Manish Kumar Yadav</span></div>
+          </a>
+          <a href="https://www.instagram.com/manish_._yadav_" target="_blank" class="contact-link">
+            <div class="contact-link-icon">IG</div>
+            <div><strong>Instagram</strong><span>@manish_._yadav_</span></div>
+          </a>
+          <a href="https://www.facebook.com/share/16VjCXrQTj/" target="_blank" class="contact-link">
+            <div class="contact-link-icon">FB</div>
+            <div><strong>Facebook</strong><span>Manish Yadav</span></div>
+          </a>
+        </div>
+        <div class="contact-extra">
+          <p>🌐 https://manish-yadav-kiit.netlify.app/</p>
+          <p>💼 Available for freelance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo"><span>.</span></div>
+    <p>© 2026 Manish Yadav | Full Stack Developer</p>
+    <div class="footer-links">
+      <a href="https://github.com/Manish40180" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/manish-kumar-yadav-57a1b9212" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/manish_._yadav_" target="_blank">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+(function(){ emailjs.init("XwUMM3R_9-caaubVQ"); })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
